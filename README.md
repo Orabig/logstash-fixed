@@ -15,8 +15,15 @@ Usage
 -----
 
 With this sample configuration file (test.json) in the current directory :
-```json
-    input{stdin{}beats{port=>5044}}output{stdout{}}
+```
+  input{
+    beats{
+      port=>5044
+    }
+  }
+  output{
+    stdout{}
+  }
 ```
 
 Launch logstash (interactive) with :
